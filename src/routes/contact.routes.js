@@ -6,7 +6,7 @@ const {
     createContact,
     getContact,
     searchContact
-} = require("../controllers/contacs")
+} = require("../controllers/contac.controller")
 
 router.use(express.json())
 

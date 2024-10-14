@@ -5,7 +5,9 @@ const app = express()
 require('dotenv').config()
 const port = process.env.PORT
 
-const ContactsRoutes = require('./src/routes/contactRoutes')
+const ContactsRoutes = require('./src/routes/contact.routes');
+const ProductsRoutes = require('./src/routes/product.routes')
+
 
 var corsOptions = {
   origin: '*',
