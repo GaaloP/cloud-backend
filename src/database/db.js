@@ -5,7 +5,7 @@ const productModel = require('./models/products');
 
 //ESQUEMAS EQ1
 const addressModel = require('./models/addresses.js');
-const orderModel = require('./models/orderes.js');
+const orderModel = require('./models/orders.js');
 const paymentMethodtModel = require('./models/paymentMethods.js');
 const saleFunnelModel = require('./models/salesFunnel.js');
 const sellModel = require('./models/sells.js');
@@ -48,7 +48,7 @@ const Products = productModel(sequelize, DataTypes);
 
 //Esquemas EQ1
 const Addresses = addressModel(sequelize, DataTypes);
-const Orderes = orderModel(sequelize, DataTypes);
+const Orders = orderModel(sequelize, DataTypes);
 const PaymentMethodts = paymentMethodtModel(sequelize, DataTypes);
 const SalesFunnel = saleFunnelModel(sequelize, DataTypes);
 const Sells = sellModel(sequelize, DataTypes);
@@ -65,7 +65,7 @@ module.exports = {
     Products,
     //entitys EQ1
     Addresses,
-    Orderes,
+    Orders,
     PaymentMethodts,
     SalesFunnel,
     Sells
